@@ -1,14 +1,20 @@
 package zakaria.restexample;
 
-public class Person {
+import org.springframework.hateoas.ResourceSupport;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class Person extends ResourceSupport {
 
 	
 	private String firstname;
 	private String lastName;
 	private int age;
 	private String departement;
+	private Account account;
+	private Profile profile;
 	
-	
+
 	public Person(){
 		
 		
@@ -75,6 +81,24 @@ public class Person {
 	 */
 	public void setDepartement(String departement) {
 		this.departement = departement;
+	}
+
+	@JsonIgnore
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	@JsonIgnore
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
 	}
 	
 }
