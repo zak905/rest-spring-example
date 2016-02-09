@@ -1,4 +1,4 @@
-package zakaria.restexample;
+package com.opencode.restexample;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package zakaria.restexample;
+package com.opencode.restexample;
 
 public class Profile {
 	
